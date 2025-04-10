@@ -13,7 +13,7 @@ Una aplicación web construida con **Next.js (App Router)** y **TailwindCSS** qu
 
 - [x] Input para búsqueda con lenguaje natural
 - [x] Productos simulados con `products.json`
-- [] Interfaz con cards de productos (nombre, imagen, precio, descripción)
+- [ ] Interfaz con cards de productos (nombre, imagen, precio, descripción)
 - [ ] Integración con modelo de IA para recomendar productos
 - [ ] Mostrar razón de cada recomendación
 
