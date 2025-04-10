@@ -1,0 +1,83 @@
+[
+    {
+      "id": "1",
+      "name": "Samsung Galaxy S23",
+      "category": "smartphone",
+      "description": "Cámara de 50MP, batería de larga duración, ideal para fotografía y redes sociales.",
+      "price": 899,
+      "image": "https://placehold.co/600x400?text=Galaxy+S23"
+    },
+    {
+      "id": "2",
+      "name": "iPhone 14 Pro",
+      "category": "smartphone",
+      "description": "Cámara avanzada con modo cinemático, gran rendimiento y batería optimizada.",
+      "price": 1099,
+      "image": "https://placehold.co/600x400?text=iPhone+14+Pro"
+    },
+    {
+      "id": "3",
+      "name": "MacBook Pro M2",
+      "category": "laptop",
+      "description": "Potente para edición de video, diseño gráfico y desarrollo. Pantalla Liquid Retina.",
+      "price": 1999,
+      "image": "https://placehold.co/600x400?text=MacBook+Pro+M2"
+    },
+    {
+      "id": "4",
+      "name": "Dell XPS 15",
+      "category": "laptop",
+      "description": "Ideal para tareas pesadas, edición, render y productividad. Pantalla 4K y diseño elegante.",
+      "price": 1799,
+      "image": "https://placehold.co/600x400?text=Dell+XPS+15"
+    },
+    {
+      "id": "5",
+      "name": "Sony WH-1000XM5",
+      "category": "headphones",
+      "description": "Cancelación de ruido líder, batería de hasta 30h, ideal para concentración y viajes.",
+      "price": 399,
+      "image": "https://placehold.co/600x400?text=Sony+XM5"
+    },
+    {
+      "id": "6",
+      "name": "Bose QuietComfort 45",
+      "category": "headphones",
+      "description": "Comodidad premium, cancelación de ruido activa y sonido equilibrado.",
+      "price": 329,
+      "image": "https://placehold.co/600x400?text=Bose+QC45"
+    },
+    {
+      "id": "7",
+      "name": "iPad Pro 12.9” M2",
+      "category": "tablet",
+      "description": "Potente para diseño, dibujo y productividad. Compatible con Apple Pencil 2.",
+      "price": 1299,
+      "image": "https://placehold.co/600x400?text=iPad+Pro+M2"
+    },
+    {
+      "id": "8",
+      "name": "Amazon Fire HD 10",
+      "category": "tablet",
+      "description": "Tablet asequible ideal para streaming, lectura y navegación.",
+      "price": 149,
+      "image": "https://placehold.co/600x400?text=Fire+HD+10"
+    },
+    {
+      "id": "9",
+      "name": "Apple Watch Series 8",
+      "category": "smartwatch",
+      "description": "Seguimiento de salud avanzado, detección de accidentes y diseño elegante.",
+      "price": 499,
+      "image": "https://placehold.co/600x400?text=Apple+Watch+8"
+    },
+    {
+      "id": "10",
+      "name": "Canon EOS R50",
+      "category": "camera",
+      "description": "Cámara mirrorless compacta, ideal para video 4K y creadores de contenido.",
+      "price": 979,
+      "image": "https://placehold.co/600x400?text=Canon+R50"
+    }
+  ]
+  
