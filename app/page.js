@@ -32,7 +32,7 @@ export default function Home() {
           <TypingResponse text={typingOutput} isComplete={isResponseComplete} />
         </div>
       ) : filteredProducts.length === 0 ? (
-        <p className="text-center text-gray-400 mt-8">No products found.</p>
+        <p className="text-center text-gray-400 mt-8">No products found</p>
       ) : (
         <RecommendationsList products={filteredProducts} />
       )}
