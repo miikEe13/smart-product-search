@@ -107,7 +107,7 @@ export const useProductSearch = (initialUrl) => {
 
       setIsResponseComplete(true);
 
-      const parsed = JSON.parse(fullText).slice(0, 5)
+      const parsed = JSON.parse(fullText)
 
       const matched = products
         .map((product) => {
@@ -118,7 +118,8 @@ export const useProductSearch = (initialUrl) => {
           );
           return match ? { ...product, reason: match.reason } : null;
         })
-        .filter(Boolean);
+        .filter(Boolean)
+        .slice(0, 5);
 
       setFilteredProducts(matched);
     } catch (error) {
