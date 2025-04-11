@@ -1,8 +1,6 @@
 import ProductCard from "./ProductCard";
 
 export default function RecommendationsList({ products }) {
-
-    console.log(products)
   if (!products || products.length === 0) {
     return (
       <p className="text-gray-500 text-center mt-10">

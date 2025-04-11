@@ -13,15 +13,15 @@ Una aplicación web construida con **Next.js (App Router)** y **TailwindCSS** qu
 
 - [x] Input para búsqueda con lenguaje natural
 - [x] Productos simulados con `products.json`
-- [ ] Interfaz con cards de productos (nombre, imagen, precio, descripción)
-- [ ] Integración con modelo de IA para recomendar productos
-- [ ] Mostrar razón de cada recomendación
+- [x] Interfaz con cards de productos (nombre, imagen, precio, descripción)
+- [x] Integración con modelo de IA para recomendar productos
+- [x] Mostrar razón de cada recomendación
 
 ## ✨ Mejoras previstas
 
 - [ ] Ruta dinámica para detalle del producto `/product/[id]`
 - [ ] Animación de carga tipo ChatGPT
-- [ ] Validación de accesibilidad y diseño responsive
+- [x] Validación de accesibilidad y diseño responsive
 - [ ] Deploy en Vercel con variables de entorno
 
 

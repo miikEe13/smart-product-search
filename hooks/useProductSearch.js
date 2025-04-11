@@ -5,6 +5,7 @@ export const useProductSearch = (initialUrl) => {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [query, setQuery] = useState('');
   const [loading, setLoading] = useState(true);
+  const [searching, setSearching] = useState(false); // optional loading for search
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -23,18 +24,51 @@ export const useProductSearch = (initialUrl) => {
     fetchProducts();
   }, [initialUrl]);
 
-  const search = (input) => {
+  const search = async (input) => {
     setQuery(input);
+
     if (input.trim() === '') {
       setFilteredProducts(products);
       return;
     }
 
-    const filtered = products.filter((product) =>
-      product.title.toLowerCase().includes(input.toLowerCase()) ||
-      product.description.toLowerCase().includes(input.toLowerCase())
-    );
-    setFilteredProducts(filtered);
+    setSearching(true);
+
+    try {
+      const res = await fetch('/api/ai', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          query: input,
+          products
+        })
+      });
+
+      const data = await res.json();
+
+      if (data.results) {
+        const matched = products
+          .map((product) => {
+            const match = data.results.find((r) => r.title === product.title);
+            return match
+              ? { ...product, reason: match.reason }
+              : null;
+          })
+          .filter(Boolean)
+          //.sort((a, b) => b.rating - a.rating); // sorted by rating descending
+
+        setFilteredProducts(matched);
+      } else {
+        setFilteredProducts([]);
+      }
+    } catch (error) {
+      console.error('AI search failed:', error);
+      setFilteredProducts([]);
+    } finally {
+      setSearching(false);
+    }
   };
 
   return {
@@ -42,6 +76,7 @@ export const useProductSearch = (initialUrl) => {
     search,
     products,
     filteredProducts,
-    loading
+    loading,
+    searching
   };
 };
