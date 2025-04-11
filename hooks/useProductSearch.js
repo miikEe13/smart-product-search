@@ -107,7 +107,7 @@ export const useProductSearch = (initialUrl) => {
 
       setIsResponseComplete(true);
 
-      const parsed = JSON.parse(fullText)
+      const parsed = JSON.parse(fullText).slice(0, 5)
 
       const matched = products
         .map((product) => {
