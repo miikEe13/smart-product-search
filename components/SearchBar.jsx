@@ -1,21 +1,13 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 export default function SearchBar({ onSearch }) {
   const [query, setQuery] = useState('');
 
-  useEffect(() => {
-    if (query.trim() === '') {
-      onSearch(''); // 🔥 Reset search when input is cleared
-    }
-  }, [query]);
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (query.trim()) {
-      onSearch(query.trim());
-    }
+    onSearch(query.trim());
   };
 
   return (
