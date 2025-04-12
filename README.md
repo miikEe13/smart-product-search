@@ -7,7 +7,7 @@ Una aplicación web construida con **Next.js (App Router)** y **TailwindCSS** qu
 - [Next.js 14](https://nextjs.org/) con App Router
 - [TailwindCSS](https://tailwindcss.com/) para estilos
 - [OpenAI API](https://platform.openai.com/)
-- JSON simulado como base de productos (`/data/products.json`)
+- api dummyjson (`https://dummyjson.com/products`)
 
 ## 📦 Funcionalidades (MVP)
 
@@ -19,10 +19,10 @@ Una aplicación web construida con **Next.js (App Router)** y **TailwindCSS** qu
 
 ## ✨ Mejoras previstas
 
-- [ ] Ruta dinámica para detalle del producto `/product/[id]`
-- [ ] Animación de carga tipo ChatGPT
+- [x] Ruta dinámica para detalle del producto `/product/[id]`
+- [x] Animación de carga tipo ChatGPT
 - [x] Validación de accesibilidad y diseño responsive
-- [ ] Deploy en Vercel con variables de entorno
+- [x] Deploy en Vercel con variables de entorno
 
 
 ## Getting Started
