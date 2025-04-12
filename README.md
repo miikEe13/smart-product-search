@@ -30,11 +30,8 @@ Una aplicación web construida con **Next.js (App Router)** y **TailwindCSS** qu
 First, run the development server:
 
 ```bash
+git clone https://github.com/miikEe13/smart-product-search.git
+cd proyect-dir
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
